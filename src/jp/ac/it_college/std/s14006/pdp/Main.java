@@ -61,6 +61,9 @@ public class Main {
         list.add("kabotya");
         list.add("cloneko");
 
+        list.add("ito");
+        list.add("usathon");
+
         for (int i = 0; i < list.size(); i++) {
             System.out.println(list.get(i));
         }
