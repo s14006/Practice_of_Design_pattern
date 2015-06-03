@@ -1,7 +1,9 @@
 package jp.ac.it_college.std.s14006.pdp;
 
 import jp.ac.it_college.std.s14006.adapter.Print;
+import jp.ac.it_college.std.s14006.adapter.Print2;
 import jp.ac.it_college.std.s14006.adapter.PrintBanner;
+import jp.ac.it_college.std.s14006.adapter.PrintBanner2;
 import jp.ac.it_college.std.s14006.iterator.Book;
 import jp.ac.it_college.std.s14006.iterator.BookShelf;
 import jp.ac.it_college.std.s14006.iterator.Iterator;
@@ -26,7 +28,13 @@ public class Main {
         }
         */
 
+    /*  --- Chapter2-1 ---
         Print p = new PrintBanner("Hello");
+        p.printWeak();
+        p.printStrong();
+        */
+
+        Print2 p = new PrintBanner2("Hello");
         p.printWeak();
         p.printStrong();
     }
