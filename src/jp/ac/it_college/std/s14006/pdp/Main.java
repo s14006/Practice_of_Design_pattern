@@ -60,12 +60,12 @@ public class Main {
         list.add("azrs");
         list.add("kabotya");
         list.add("cloneko");
-
         list.add("ito");
         list.add("usathon");
 
-        for (int i = 0; i < list.size(); i++) {
-            System.out.println(list.get(i));
+        for (java.util.Iterator<String> it = list.iterator(); it.hasNext();) {
+            String name = it.next();
+            System.out.println(name);
         }
 
 
