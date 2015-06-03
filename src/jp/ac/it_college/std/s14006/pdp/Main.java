@@ -63,8 +63,7 @@ public class Main {
         list.add("ito");
         list.add("usathon");
 
-        for (java.util.Iterator<String> it = list.iterator(); it.hasNext();) {
-            String name = it.next();
+        for (String name : list) {
             System.out.println(name);
         }
 
