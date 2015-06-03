@@ -57,7 +57,9 @@ public class Main {
 
     //    LinkedListTest3();    lesson19-12
 
-        LinkedListTest4();
+    //    LinkedListTest4();    lesson19-13
+
+        HashSetTest1();
     }
 
     public static void Arraytest() {
@@ -248,6 +250,27 @@ public class Main {
             }
         } catch (NoSuchElementException e) {
             e.printStackTrace();
+        }
+    }
+
+    public static void HashSetTest1() {
+
+        Set<String> set = new HashSet<String>();
+
+        set.add("azrs");
+        set.add("kabotya");
+        set .add("cloneko");
+        set.add("ito");
+        set.add("usathon");
+
+        for (String name : set) {
+            System.out.println(name);
+        }
+
+        if (set.contains("azrs")) {
+            System.out.println("setにazrsは含まれています");
+        } else {
+            System.out.println("setにazrsは含まれていません");
         }
     }
 }
