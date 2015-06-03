@@ -54,7 +54,7 @@ public class Main {
         }
         */
 
-    /*  --- lesson19-5 ---
+
         // 自動的に長くなる配列
         ArrayList<String> list = new ArrayList<String>();
 
@@ -64,10 +64,32 @@ public class Main {
         list.add("ito");
         list.add("usathon");
 
-        for (String name : list) {
-            System.out.println(name);
+        //削除前の表示
+        System.out.println("削除前");
+        for (int i = 0; i < list.size(); i++) {
+            System.out.println(i + ":" + list.get(i));
         }
-        */
+        System.out.println();
+
+        //azrsとkabotyaとusathonを削除
+        list.remove("azrs");
+        list.remove("kabotya");
+        list.remove("usathon");
+
+        //削除後の表示
+        System.out.println("削除後");
+        for (int i = 0; i < list.size(); i++) {
+            System.out.println(i + ":" + list.get(i));
+        }
+        System.out.println();
+
+        //azrsは含まれているかどうか
+        if (list.contains("azrs")) {
+            System.out.println("listにazrsは含まれています");
+        } else {
+            System.out.println("listにazrsは含まれていません");
+        }
+
 
     /*  --- lesson19 JDK1.4以前のJava ---
         ArrayList list = new ArrayList();
@@ -84,6 +106,7 @@ public class Main {
         }
         */
 
+    /*  --- lesson19-7 ---
         ArrayList<Integer> list = new ArrayList<Integer>();
 
         list.add(12);
@@ -95,5 +118,6 @@ public class Main {
         for (int n : list) {
             System.out.println(n);
         }
+        */
     }
 }
