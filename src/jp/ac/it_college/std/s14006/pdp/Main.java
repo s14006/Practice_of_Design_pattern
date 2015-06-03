@@ -54,7 +54,7 @@ public class Main {
         }
         */
 
-        /*
+    /*  --- lesson19-5 ---
         // 自動的に長くなる配列
         ArrayList<String> list = new ArrayList<String>();
 
@@ -69,7 +69,7 @@ public class Main {
         }
         */
 
-
+    /*  --- lesson19 JDK1.4以前のJava ---
         ArrayList list = new ArrayList();
 
         list.add("azrs");
@@ -82,8 +82,18 @@ public class Main {
             String name = (String)it.next();
             System.out.println(name);
         }
+        */
 
+        ArrayList<Integer> list = new ArrayList<Integer>();
 
+        list.add(12);
+        list.add(34);
+        list.add(56);
+        list.add(78);
+        list.add(90);
 
+        for (int n : list) {
+            System.out.println(n);
+        }
     }
 }
