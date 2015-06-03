@@ -54,6 +54,7 @@ public class Main {
         }
         */
 
+        /*
         // 自動的に長くなる配列
         ArrayList<String> list = new ArrayList<String>();
 
@@ -66,7 +67,21 @@ public class Main {
         for (String name : list) {
             System.out.println(name);
         }
+        */
 
+
+        ArrayList list = new ArrayList();
+
+        list.add("azrs");
+        list.add("kabotya");
+        list.add("cloneko");
+        list.add("ito");
+        list.add("usathon");
+
+        for (java.util.Iterator it = list.iterator(); it.hasNext();) {
+            String name = (String)it.next();
+            System.out.println(name);
+        }
 
 
 
