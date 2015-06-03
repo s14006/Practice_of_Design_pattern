@@ -41,15 +41,17 @@ public class Main {
         p.printStrong();
         */
 
-    //    Arraytest();      lesson19-1
+    //    Arraytest();          lesson19-1
 
-    //    ArrayTest1();     lesson19-2
+    //    ArrayTest1();         lesson19-2
 
-    //    ArrayTest2();     lesson19-2~
+    //    ArrayTest2();         lesson19-2~
 
-    //    ArrayTest3();     lesson19-6
+    //    ArrayTest3();         lesson19-6
 
-    //    ArrayInteger();   lesson19-7
+    //    ArrayInteger();       lesson19-7
+
+        LinkdeListTest1();
     }
 
     public static void Arraytest() {
@@ -147,5 +149,21 @@ public class Main {
         for (int n : list) {
             System.out.println(n);
         }
+    }
+
+    public static void LinkdeListTest1() {
+
+        LinkedList<String> list = new LinkedList<String>();
+
+        list.add("kabotya");
+        list.add("clneko");
+        list.add("ito");
+        list.add("usathon");
+
+        System.out.println(list);
+
+        list.addFirst("azrs");
+
+        System.out.println(list);
     }
 }
