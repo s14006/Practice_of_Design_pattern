@@ -41,8 +41,19 @@ public class Main {
         p.printStrong();
         */
 
+    //    Arraytest();      lesson19-1
 
-    /*  --- lesson19-1 ---
+    //    ArrayTest1();     lesson19-2
+
+    //    ArrayTest2();     lesson19-2~
+
+    //    ArrayTest3();     lesson19-6
+
+    //    ArrayInteger();   lesson19-7
+    }
+
+    public static void Arraytest() {
+
         String[] array = new String[3];
 
         array[0] = "azrs";
@@ -52,8 +63,24 @@ public class Main {
         for (int i = 0; i < array.length; i++) {
             System.out.println(array[i]);
         }
-        */
 
+    }
+
+    public static void ArrayTest1() {
+
+        ArrayList<String> list = new ArrayList<String>();
+
+        list.add("azrs");
+        list.add("kabotya");
+        list.add("cloneko");
+
+        for (int i = 0; i < list.size(); i++) {
+            System.out.println(list.get(i));
+        }
+
+    }
+
+    public static void ArrayTest2() {
 
         // 自動的に長くなる配列
         ArrayList<String> list = new ArrayList<String>();
@@ -89,9 +116,10 @@ public class Main {
         } else {
             System.out.println("listにazrsは含まれていません");
         }
+    }
 
-
-    /*  --- lesson19 JDK1.4以前のJava ---
+    public static void ArrayTest3() {
+        //JDK 1.4以前のJava
         ArrayList list = new ArrayList();
 
         list.add("azrs");
@@ -104,9 +132,10 @@ public class Main {
             String name = (String)it.next();
             System.out.println(name);
         }
-        */
+    }
 
-    /*  --- lesson19-7 ---
+    public static void ArrayInteger() {
+
         ArrayList<Integer> list = new ArrayList<Integer>();
 
         list.add(12);
@@ -118,6 +147,5 @@ public class Main {
         for (int n : list) {
             System.out.println(n);
         }
-        */
     }
 }
