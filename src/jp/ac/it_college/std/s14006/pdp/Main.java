@@ -34,7 +34,7 @@ public class Main {
         p.printStrong();
         */
 
-        Print2 p = new PrintBanner2("Hello");
+        Print2 p = new PrintBanner2("⊂ミ⊃＾ω＾ ）⊃　ｱｳｱｳ!!");
         p.printWeak();
         p.printStrong();
     }
