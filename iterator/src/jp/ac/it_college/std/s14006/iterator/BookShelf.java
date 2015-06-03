@@ -3,7 +3,7 @@ package jp.ac.it_college.std.s14006.iterator;
 /**
  * Created by kabotya on 15/06/03.
  */
-public class BookShelf {
+public class BookShelf implements Aggregate{
 
     private Book[] books;
     private int last = 0;
