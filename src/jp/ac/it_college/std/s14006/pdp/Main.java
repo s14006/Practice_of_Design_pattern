@@ -59,7 +59,9 @@ public class Main {
 
     //    LinkedListTest4();    lesson19-13
 
-        HashSetTest1();
+    //    HashSetTest1();       lesson19-14
+
+        HashMapTest();
     }
 
     public static void Arraytest() {
@@ -272,5 +274,46 @@ public class Main {
         } else {
             System.out.println("setにazrsは含まれていません");
         }
+    }
+
+    public static void HashMapTest() {
+
+        Map<String,Integer> map = new HashMap<String,Integer>();
+
+        map.put("azrs",100);
+        map.put("kabotya",57);
+        map.put("cloneko",85);
+        map.put("ito",85);
+        map.put("usathon", 92);
+
+        for (Map.Entry<String,Integer> entry : map.entrySet()) {
+            System.out.println(entry.getKey() + " => " + entry.getValue());
+        }
+        System.out.println();
+
+        //キーに関する拡張forループ
+        for (String name : map.keySet()) {
+            System.out.println(name);
+        }
+        System.out.println();
+
+        //値に関する拡張forループ
+        for (int value : map.values()) {
+            System.out.println(value);
+        }
+        System.out.println();
+
+        //キーに関する拡張forループで値も得る
+        for (String name : map.keySet()) {
+            System.out.println(name + " => " + map.get(name));
+        }
+        System.out.println();
+
+        //キーkabotyaの値を得る
+        System.out.println("kabotyaの値 = " + map.get("kabotya"));
+
+        //キーkabosuの値を得る
+        System.out.println("kabosuの値 = " + map.get("kabosu"));
+
     }
 }
