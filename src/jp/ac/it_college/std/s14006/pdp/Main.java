@@ -51,7 +51,9 @@ public class Main {
 
     //    ArrayInteger();       lesson19-7
 
-        LinkdeListTest1();
+    //    LinkedListTest1();    lesson19-10
+
+        LinkedListTest2();
     }
 
     public static void Arraytest() {
@@ -151,7 +153,7 @@ public class Main {
         }
     }
 
-    public static void LinkdeListTest1() {
+    public static void LinkedListTest1() {
 
         LinkedList<String> list = new LinkedList<String>();
 
@@ -165,5 +167,26 @@ public class Main {
         list.addFirst("azrs");
 
         System.out.println(list);
+    }
+
+    public static void LinkedListTest2() {
+
+        Queue<String> queue = new LinkedList<String>();
+
+        queue.offer("azrs");
+        System.out.println("offer後のqueue = " + queue);
+        queue.offer("kabotya");
+        System.out.println("offer後のqueue = " + queue);
+        queue.offer("cloneko");
+        System.out.println("offer後のqueue = " + queue);
+        queue.offer("ito");
+        System.out.println("offer後のqueue = " + queue);
+
+        while (queue.peek() != null) {
+
+            String name = queue.poll();
+            System.out.println("pollの戻り値   = " + name);
+            System.out.println("poll後のqueue  = " + queue);
+        }
     }
 }
