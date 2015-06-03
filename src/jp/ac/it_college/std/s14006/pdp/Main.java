@@ -14,32 +14,11 @@ import jp.ac.it_college.std.s14006.iterator.Iterator;
 public class Main {
     public static void main(String[] ages) {
 
-    /*  --- Chapter 1 ---
-        BookShelf bookShelf = new BookShelf(4);
-        bookShelf.appendBook(new Book("Around the World in 80 Days"));
-        bookShelf.appendBook(new Book("Bible"));
-        bookShelf.appendBook(new Book("Cinderella"));
-        bookShelf.appendBook(new Book("⊂ミ⊃＾ω＾ ）⊃　ｱｳｱｳ!!"));
+    //    Chapter1();
 
-        Iterator it = bookShelf.iterator();
+    //    Chapter2_1();
 
-        while (it.hasNext()) {
-            Book book = (Book) it.next();
-            System.out.println(book.getName());
-        }
-        */
-
-    /*  --- Chapter2-1 ---
-        Print p = new PrintBanner("Hello");
-        p.printWeak();
-        p.printStrong();
-        */
-
-    /*  --- Chapter2-2 ---
-        Print2 p = new PrintBanner2("⊂ミ⊃＾ω＾ ）⊃　ｱｳｱｳ!!");
-        p.printWeak();
-        p.printStrong();
-        */
+    //    Chapter2_2();
 
     //    Arraytest();          lesson19-1
 
@@ -61,7 +40,39 @@ public class Main {
 
     //    HashSetTest1();       lesson19-14
 
-        HashMapTest();
+    //    HashMapTest();        lesson19-15
+    }
+
+    public static void Chapter1() {
+
+        BookShelf bookShelf = new BookShelf(4);
+        bookShelf.appendBook(new Book("Around the World in 80 Days"));
+        bookShelf.appendBook(new Book("Bible"));
+        bookShelf.appendBook(new Book("Cinderella"));
+        bookShelf.appendBook(new Book("⊂ミ⊃＾ω＾ ）⊃　ｱｳｱｳ!!"));
+
+        Iterator it = bookShelf.iterator();
+
+        while (it.hasNext()) {
+            Book book = (Book) it.next();
+            System.out.println(book.getName());
+        }
+    }
+
+    public static void Chapter2_1() {
+
+        Print p = new PrintBanner("⊂ミ⊃＾ω＾ ）⊃　ｱｳｱｳ!!");
+        p.printWeak();
+        p.printStrong();
+
+    }
+
+    public static void Chapter2_2() {
+
+        Print2 p = new PrintBanner2("⊂ミ⊃＾ω＾ ）⊃　ｱｳｱｳ!!");
+        p.printWeak();
+        p.printStrong();
+
     }
 
     public static void Arraytest() {
