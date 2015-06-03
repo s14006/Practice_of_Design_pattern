@@ -1,15 +1,17 @@
 package jp.ac.it_college.std.s14006.pdp;
 
+import jp.ac.it_college.std.s14006.adapter.Print;
+import jp.ac.it_college.std.s14006.adapter.PrintBanner;
 import jp.ac.it_college.std.s14006.iterator.Book;
 import jp.ac.it_college.std.s14006.iterator.BookShelf;
 import jp.ac.it_college.std.s14006.iterator.Iterator;
-
 /**
  * Created by kabotya on 15/06/03.
  */
 public class Main {
     public static void main(String[] ages) {
 
+    /*  --- Chapter 1 ---
         BookShelf bookShelf = new BookShelf(4);
         bookShelf.appendBook(new Book("Around the World in 80 Days"));
         bookShelf.appendBook(new Book("Bible"));
@@ -22,5 +24,10 @@ public class Main {
             Book book = (Book) it.next();
             System.out.println(book.getName());
         }
+        */
+
+        Print p = new PrintBanner("Hello");
+        p.printWeak();
+        p.printStrong();
     }
 }
