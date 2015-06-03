@@ -41,6 +41,8 @@ public class Main {
         p.printStrong();
         */
 
+
+    /*  --- lesson19-1 ---
         String[] array = new String[3];
 
         array[0] = "azrs";
@@ -49,6 +51,18 @@ public class Main {
 
         for (int i = 0; i < array.length; i++) {
             System.out.println(array[i]);
+        }
+        */
+
+        // 自動的に長くなる配列
+        ArrayList<String> list = new ArrayList<String>();
+
+        list.add("azrs");
+        list.add("kabotya");
+        list.add("cloneko");
+
+        for (int i = 0; i < list.size(); i++) {
+            System.out.println(list.get(i));
         }
 
 
