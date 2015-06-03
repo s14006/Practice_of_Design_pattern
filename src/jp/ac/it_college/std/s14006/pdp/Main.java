@@ -55,7 +55,9 @@ public class Main {
 
     //    LinkedListTest2();    lesson19-11
 
-        LinkedListTest3();
+    //    LinkedListTest3();    lesson19-12
+
+        LinkedListTest4();
     }
 
     public static void Arraytest() {
@@ -213,6 +215,36 @@ public class Main {
                 name = queue.remove();
                 System.out.println("removeの戻り値  = " + name);
                 System.out.println("remove後のqueue = " + queue);
+            }
+        } catch (NoSuchElementException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void LinkedListTest4() {
+
+        LinkedList<String> stack = new LinkedList<String>();
+
+        stack.addFirst("azrs");
+        System.out.println("addFirst後のstack = " + stack);
+        stack.addFirst("kabotya");
+        System.out.println("addFirst後のstack = " + stack);
+        stack.addFirst("cloneko");
+        System.out.println("addFirst後のstack = " + stack);
+        stack.addFirst("ito");
+        System.out.println("addFirst後のstack = " + stack);
+        stack.addFirst("usathon");
+        System.out.println("addFirst後のstack = " + stack);
+
+        try {
+
+            while (true) {
+                String name = stack.getFirst();
+                System.out.println("getFirstの戻り値 = " + name);
+
+                name = stack.removeFirst();
+                System.out.println("removeFirstの戻り値  = " + name);
+                System.out.println("removeFirst後のstack = " + stack);
             }
         } catch (NoSuchElementException e) {
             e.printStackTrace();
