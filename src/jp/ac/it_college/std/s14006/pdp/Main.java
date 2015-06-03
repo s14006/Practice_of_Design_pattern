@@ -53,7 +53,9 @@ public class Main {
 
     //    LinkedListTest1();    lesson19-10
 
-        LinkedListTest2();
+    //    LinkedListTest2();    lesson19-11
+
+        LinkedListTest3();
     }
 
     public static void Arraytest() {
@@ -187,6 +189,33 @@ public class Main {
             String name = queue.poll();
             System.out.println("pollの戻り値   = " + name);
             System.out.println("poll後のqueue  = " + queue);
+        }
+    }
+
+    public static void LinkedListTest3() {
+
+        Queue<String> queue = new LinkedList<String>();
+
+        queue.offer("azrs");
+        System.out.println("offer後のqueue = " + queue);
+        queue.offer("kabotya");
+        System.out.println("offer後のqueue = " + queue);
+        queue.offer("cloneko");
+        System.out.println("offer後のqueue = " + queue);
+        queue.offer("ito");
+        System.out.println("offer後のqueue = " + queue);
+
+        try {
+            while (true) {
+                String name = queue.element();
+                System.out.println("elementの戻り値 = " + name);
+
+                name = queue.remove();
+                System.out.println("removeの戻り値  = " + name);
+                System.out.println("remove後のqueue = " + queue);
+            }
+        } catch (NoSuchElementException e) {
+            e.printStackTrace();
         }
     }
 }
