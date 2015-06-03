@@ -1,5 +1,6 @@
 package jp.ac.it_college.std.s14006.pdp;
 
+import java.util.*;
 import jp.ac.it_college.std.s14006.adapter.Print;
 import jp.ac.it_college.std.s14006.adapter.Print2;
 import jp.ac.it_college.std.s14006.adapter.PrintBanner;
@@ -34,8 +35,24 @@ public class Main {
         p.printStrong();
         */
 
+    /*  --- Chapter2-2 ---
         Print2 p = new PrintBanner2("⊂ミ⊃＾ω＾ ）⊃　ｱｳｱｳ!!");
         p.printWeak();
         p.printStrong();
+        */
+
+        String[] array = new String[3];
+
+        array[0] = "azrs";
+        array[1] = "kabotya";
+        array[2] = "cloneko";
+
+        for (int i = 0; i < array.length; i++) {
+            System.out.println(array[i]);
+        }
+
+
+
+
     }
 }
