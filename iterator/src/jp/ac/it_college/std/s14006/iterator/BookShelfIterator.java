@@ -14,11 +14,7 @@ public class BookShelfIterator implements Iterator{
     }
 
     public boolean hasNext() {
-        if (index < bookShelf.getlength()) {
-            return true;
-        } else {
-            return false;
-        }
+        return index < bookShelf.getlength();
     }
 
     public Object next() {
