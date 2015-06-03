@@ -14,7 +14,7 @@ public class Main {
         bookShelf.appendBook(new Book("Around the World in 80 Days"));
         bookShelf.appendBook(new Book("Bible"));
         bookShelf.appendBook(new Book("Cinderella"));
-        bookShelf.appendBook(new Book("Daddy-Long-Legs"));
+        bookShelf.appendBook(new Book("⊂ミ⊃＾ω＾ ）⊃　ｱｳｱｳ!!"));
 
         Iterator it = bookShelf.iterator();
 
