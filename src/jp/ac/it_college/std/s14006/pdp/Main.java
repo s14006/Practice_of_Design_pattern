@@ -11,6 +11,7 @@ import jp.ac.it_college.std.s14006.factory_method.idcard.IDCardFactory;
 import jp.ac.it_college.std.s14006.iterator.Book;
 import jp.ac.it_college.std.s14006.iterator.BookShelf;
 import jp.ac.it_college.std.s14006.iterator.Iterator;
+import jp.ac.it_college.std.s14006.singleton.Singleton;
 import jp.ac.it_college.std.s14006.template_method.AbstractDisplay;
 import jp.ac.it_college.std.s14006.template_method.CharDisplay;
 import jp.ac.it_college.std.s14006.template_method.StringDisplay;
@@ -29,7 +30,9 @@ public class Main {
 
     //    Chapter3();
 
-        Chapter4();
+    //    Chapter4();
+
+        Chapter5();
 
     //    Arraytest();          lesson19-1
 
@@ -109,6 +112,22 @@ public class Main {
         card1.use();
         card2.use();
         card3.use();
+    }
+
+    public static void Chapter5() {
+
+        System.out.println("Start.");
+
+        Singleton obj1 = Singleton.getInstance();
+        Singleton obj2 = Singleton.getInstance();
+
+        if (obj1 == obj2) {
+            System.out.println("obj1とobj2は同じインスタンスです");
+        } else {
+            System.out.println("obj1とobj2は同じインスタンスではありません");
+        }
+
+        System.out.println("End.");
     }
 
     public static void Arraytest() {
