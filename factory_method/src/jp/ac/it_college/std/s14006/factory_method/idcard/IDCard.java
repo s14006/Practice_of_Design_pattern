@@ -1,7 +1,7 @@
-package jp.ac.it_college.std.s14006.factory_method;
-package idcard;
+package jp.ac.it_college.std.s14006.factory_method.idcard;
 
-import framework.*;
+import jp.ac.it_college.std.s14006.factory_method.framework.*;
+
 /**
  * Created by kabotya on 15/06/09.
  */

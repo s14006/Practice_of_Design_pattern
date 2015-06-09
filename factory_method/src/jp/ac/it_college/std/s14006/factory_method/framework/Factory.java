@@ -1,5 +1,4 @@
-package jp.ac.it_college.std.s14006.factory_method;
-package framework;
+package jp.ac.it_college.std.s14006.factory_method.framework;
 
 /**
  * Created by kabotya on 15/06/09.
