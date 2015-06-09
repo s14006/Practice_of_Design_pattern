@@ -9,6 +9,7 @@ public abstract class Factory {
     public final Prodact create(String owner) {
         Prodact p = createProduct(owner);
         registerProduct(p);
+        return p;
     }
 
     protected abstract Prodact createProduct(String owner);
