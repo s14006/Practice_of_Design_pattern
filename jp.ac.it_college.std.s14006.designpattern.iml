@@ -10,5 +10,6 @@
     <orderEntry type="module" module-name="iterator" />
     <orderEntry type="module" module-name="adapter" />
     <orderEntry type="module" module-name="template_method" />
+    <orderEntry type="module" module-name="factory_method" />
   </component>
 </module>

@@ -5,6 +5,9 @@ import jp.ac.it_college.std.s14006.adapter.Print;
 import jp.ac.it_college.std.s14006.adapter.Print2;
 import jp.ac.it_college.std.s14006.adapter.PrintBanner;
 import jp.ac.it_college.std.s14006.adapter.PrintBanner2;
+import jp.ac.it_college.std.s14006.factory_method.framework.Factory;
+import jp.ac.it_college.std.s14006.factory_method.framework.Prodact;
+import jp.ac.it_college.std.s14006.factory_method.idcard.IDCardFactory;
 import jp.ac.it_college.std.s14006.iterator.Book;
 import jp.ac.it_college.std.s14006.iterator.BookShelf;
 import jp.ac.it_college.std.s14006.iterator.Iterator;
@@ -24,7 +27,9 @@ public class Main {
 
     //    Chapter2_2();
 
-        Chapter3();
+    //    Chapter3();
+
+        Chapter4();
 
     //    Arraytest();          lesson19-1
 
@@ -91,6 +96,19 @@ public class Main {
         d1.display();
         d2.display();
         d3.display();
+    }
+
+    public static void Chapter4() {
+
+        Factory factory = new IDCardFactory();
+
+        Prodact card1 = factory.create("かぼちゃ");
+        Prodact card2 = factory.create("azrs");
+        Prodact card3 = factory.create("cloneko");
+
+        card1.use();
+        card2.use();
+        card3.use();
     }
 
     public static void Arraytest() {

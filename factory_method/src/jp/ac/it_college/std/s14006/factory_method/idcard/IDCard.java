@@ -15,7 +15,7 @@ public class IDCard extends Prodact {
     }
 
     public void use() {
-        System.out.println(owner + "のカードを作ります");
+        System.out.println(owner + "のカードを使います");
     }
 
     public String getOwner() {
