@@ -2,6 +2,7 @@ package jp.ac.it_college.std.s14006.factory_method.idcard;
 
 import jp.ac.it_college.std.s14006.factory_method.framework.*;
 import java.util.*;
+
 /**
  * Created by kabotya on 15/06/09.
  */
