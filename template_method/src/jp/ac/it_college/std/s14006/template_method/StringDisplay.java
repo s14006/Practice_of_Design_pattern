@@ -18,7 +18,7 @@ public class StringDisplay extends AbstractDisplay {
     }
 
     public void print() {
-        System.out.println(" | " + string + " | ");
+        System.out.println("|" + string + "|");
     }
 
     public void close() {
@@ -29,7 +29,7 @@ public class StringDisplay extends AbstractDisplay {
 
         System.out.print("+");
         for (int i = 0; i < width; i++) {
-            System.out.print(" - ");
+            System.out.print("-");
         }
 
         System.out.println("+");

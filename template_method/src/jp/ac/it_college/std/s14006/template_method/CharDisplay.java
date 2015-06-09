@@ -3,7 +3,7 @@ package jp.ac.it_college.std.s14006.template_method;
 /**
  * Created by kabotya on 15/06/09.
  */
-public class CharDisplay {
+public class CharDisplay extends AbstractDisplay{
 
     private char ch;
 
@@ -20,6 +20,6 @@ public class CharDisplay {
     }
 
     public void close() {
-        System.out.print(">>");
+        System.out.println(">>");
     }
 }

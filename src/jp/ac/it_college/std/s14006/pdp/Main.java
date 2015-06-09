@@ -8,6 +8,10 @@ import jp.ac.it_college.std.s14006.adapter.PrintBanner2;
 import jp.ac.it_college.std.s14006.iterator.Book;
 import jp.ac.it_college.std.s14006.iterator.BookShelf;
 import jp.ac.it_college.std.s14006.iterator.Iterator;
+import jp.ac.it_college.std.s14006.template_method.AbstractDisplay;
+import jp.ac.it_college.std.s14006.template_method.CharDisplay;
+import jp.ac.it_college.std.s14006.template_method.StringDisplay;
+
 /**
  * Created by kabotya on 15/06/03.
  */
@@ -19,6 +23,8 @@ public class Main {
     //    Chapter2_1();
 
     //    Chapter2_2();
+
+        Chapter3();
 
     //    Arraytest();          lesson19-1
 
@@ -41,6 +47,7 @@ public class Main {
     //    HashSetTest1();       lesson19-14
 
     //    HashMapTest();        lesson19-15
+
     }
 
     public static void Chapter1() {
@@ -73,6 +80,17 @@ public class Main {
         p.printWeak();
         p.printStrong();
 
+    }
+
+    public static void Chapter3() {
+
+        AbstractDisplay d1 = new CharDisplay('H');
+        AbstractDisplay d2 = new StringDisplay("Hello,World");
+        AbstractDisplay d3 = new StringDisplay("こんちは");
+
+        d1.display();
+        d2.display();
+        d3.display();
     }
 
     public static void Arraytest() {
