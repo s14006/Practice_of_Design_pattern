@@ -12,5 +12,6 @@
     <orderEntry type="module" module-name="template_method" />
     <orderEntry type="module" module-name="factory_method" />
     <orderEntry type="module" module-name="singleton" />
+    <orderEntry type="module" module-name="prototype" />
   </component>
 </module>

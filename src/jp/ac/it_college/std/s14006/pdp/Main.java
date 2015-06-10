@@ -11,6 +11,10 @@ import jp.ac.it_college.std.s14006.factory_method.idcard.IDCardFactory;
 import jp.ac.it_college.std.s14006.iterator.Book;
 import jp.ac.it_college.std.s14006.iterator.BookShelf;
 import jp.ac.it_college.std.s14006.iterator.Iterator;
+import jp.ac.it_college.std.s14006.prototype.UnderlinePen;
+import jp.ac.it_college.std.s14006.prototype.framework.Manager;
+import jp.ac.it_college.std.s14006.prototype.framework.MessageBox;
+import jp.ac.it_college.std.s14006.prototype.framework.Product;
 import jp.ac.it_college.std.s14006.singleton.Singleton;
 import jp.ac.it_college.std.s14006.template_method.AbstractDisplay;
 import jp.ac.it_college.std.s14006.template_method.CharDisplay;
@@ -32,7 +36,9 @@ public class Main {
 
     //    Chapter4();
 
-        Chapter5();
+    //    Chapter5();
+
+        Chapter6();
 
     //    Arraytest();          lesson19-1
 
@@ -128,6 +134,26 @@ public class Main {
         }
 
         System.out.println("End.");
+    }
+
+    public static void Chapter6() {
+
+        Manager manager = new Manager();
+        UnderlinePen upen = new UnderlinePen('~');
+        MessageBox mbox = new MessageBox('*');
+        MessageBox sbox = new MessageBox('/');
+        manager.register("Strong message", upen);
+        manager.register("warning box", mbox);
+        manager.register("slash box",  sbox);
+
+        Product p1 = manager.create("Strong message");
+        p1.use("Hello World");
+
+        Product p2 = manager.create("warning box");
+        p2.use("Hello World");
+
+        Product p3 = manager.create("slash box");
+        p3.use("Hello World");
     }
 
     public static void Arraytest() {
