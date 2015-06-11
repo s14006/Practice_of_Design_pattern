@@ -12,7 +12,7 @@ public class ListFactory extends Factory{
     }
 
     public Tray createTray(String caption) {
-        return new ListTray(String caption);
+        return new ListTray(caption);
     }
 
     public Page createPage(String title, String author) {
