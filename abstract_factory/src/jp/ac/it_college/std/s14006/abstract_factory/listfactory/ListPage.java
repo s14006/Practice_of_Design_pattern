@@ -5,27 +5,29 @@ import java.util.Iterator;
 /**
  * Created by kabotya on 15/06/11.
  */
-public class ListTray extends Tray{
+public class ListPage extends Page {
 
-    public ListTray(String caption) {
-        super(caption);
+    public ListPage(String title, String author) {
+        super(title, author);
     }
 
     public String makeHTML() {
         StringBuffer buffer = new StringBuffer();
-        buffer.append("<li>\n");
-        buffer.append(caption + "\n");
+        buffer.append("<html><head><title>" + title + "</title></head>\n");
+        buffer.append("<body>\n");
+        buffer.append("<h1>" + title + "</h1>\n");
         buffer.append("<ul>\n");
-        Iterator it = tray.iterator();
+
+        Iterator it = content.iterator();
 
         while (it.hasNext()) {
             Item item = (Item)it.next();
-            buffer.append(item.makeHTML());
+            buffer.append(Item.makeHTML());
         }
 
         buffer.append("</ul>\n");
-        buffer.append("<li>\n");
-
+        buffer.append("<hr><address>" + author + "</address>\n");
+        buffer.append("</body></html>\n");
         return buffer.toString();
     }
 }
