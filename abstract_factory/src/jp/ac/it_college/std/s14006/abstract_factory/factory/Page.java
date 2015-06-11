@@ -1,4 +1,6 @@
-package jp.ac.it_college.std.s14006.abstract_factory;
+package jp.ac.it_college.std.s14006.abstract_factory.factory;
+
+import jp.ac.it_college.std.s14006.abstract_factory.factory.Item;
 
 import java.io.*;
 import java.util.ArrayList;

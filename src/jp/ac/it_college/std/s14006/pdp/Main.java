@@ -2,6 +2,10 @@ package jp.ac.it_college.std.s14006.pdp;
 
 import java.util.*;
 
+import jp.ac.it_college.std.s14006.abstract_factory.factory.Factory;
+import jp.ac.it_college.std.s14006.abstract_factory.factory.Link;
+import jp.ac.it_college.std.s14006.abstract_factory.factory.Page;
+import jp.ac.it_college.std.s14006.abstract_factory.factory.Tray;
 import jp.ac.it_college.std.s14006.adapter.Print;
 import jp.ac.it_college.std.s14006.adapter.Print2;
 import jp.ac.it_college.std.s14006.adapter.PrintBanner;
@@ -29,43 +33,7 @@ import jp.ac.it_college.std.s14006.template_method.StringDisplay;
 public class Main {
     public static void main(String[] args) {
 
-    //    Chapter1();
-
-    //    Chapter2_1();
-
-    //    Chapter2_2();
-
-    //    Chapter3();
-
-    //    Chapter4();
-
-    //    Chapter5();
-
-    //    Chapter6();
-
-        Chapter7(new String[] {"html"});
-
-    //    Arraytest();          lesson19-1
-
-    //    ArrayTest1();         lesson19-2
-
-    //    ArrayTest2();         lesson19-2~
-
-    //    ArrayTest3();         lesson19-6
-
-    //    ArrayInteger();       lesson19-7
-
-    //    LinkedListTest1();    lesson19-10
-
-    //    LinkedListTest2();    lesson19-11
-
-    //    LinkedListTest3();    lesson19-12
-
-    //    LinkedListTest4();    lesson19-13
-
-    //    HashSetTest1();       lesson19-14
-
-    //    HashMapTest();        lesson19-15
+        FactoryMain(new String[]{});
 
     }
 
@@ -112,6 +80,7 @@ public class Main {
         d3.display();
     }
 
+    /*
     public static void Chapter4() {
 
         Factory factory = new IDCardFactory();
@@ -123,7 +92,7 @@ public class Main {
         card1.use();
         card2.use();
         card3.use();
-    }
+    }*/
 
     public static void Chapter5() {
 
@@ -192,6 +161,45 @@ public class Main {
     private static void usage() {
         System.out.println("Usage: java Main plain        プレーンテキストで作成");
         System.out.println("Usage: java Main html         HTMLファイルで作成");
+    }
+
+    public static void FactoryMain(String[] args) {
+
+        if (args.length != 1) {
+            System.out.println("Usage: java Main class.name.of.ConcreteFactory");
+            System.out.println("Example 1: java Main listfactory.ListFactory");
+            System.out.println("Example 2: java Main tablefactory.TableFactory");
+            System.exit(0);
+        }
+
+        Factory factory = Factory.getFactory(args[0]);
+
+        Link asahi = factory.createLink("朝日新聞", "http://www.asahi.com/");
+        Link yomiuri = factory.createLink("読売新聞", "http://www.yomiuri.co.jp/");
+        Link us_yahoo = factory.createLink("Yahoo!", "http://www.yahoo.com/");
+        Link jp_yahoo = factory.createLink("Yahoo!Japan", "http://www.yahoo.jp");
+        Link excite = factory.createLink("Excite", "http://www.excite.com");
+        Link google = factory.createLink("Google", "http://www.google.com");
+
+        Tray traynews = factory.createTray("新聞");
+        traynews.add(asahi);
+        traynews.add(yomiuri);
+
+        Tray trayyahoo = factory.createTray("Yahoo!");
+        trayyahoo.add(us_yahoo);
+        trayyahoo.add(jp_yahoo);
+
+        Tray traysearch = factory.createTray("サーチエンジン");
+        traysearch.add(traysearch);
+        traysearch.add(excite);
+        traysearch.add(google);
+
+        Page page = factory.createPage("LinkPage","かぼちゃ");
+        page.add(traynews);
+        page.add(traysearch);
+        page.output();
+
+
     }
 
 

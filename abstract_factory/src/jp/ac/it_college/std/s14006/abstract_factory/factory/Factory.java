@@ -1,4 +1,4 @@
-package jp.ac.it_college.std.s14006.abstract_factory;
+package jp.ac.it_college.std.s14006.abstract_factory.factory;
 
 /**
  * Created by kabotya on 15/06/11.
