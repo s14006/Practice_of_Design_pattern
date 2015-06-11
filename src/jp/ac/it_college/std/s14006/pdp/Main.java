@@ -1,10 +1,14 @@
 package jp.ac.it_college.std.s14006.pdp;
 
 import java.util.*;
+
 import jp.ac.it_college.std.s14006.adapter.Print;
 import jp.ac.it_college.std.s14006.adapter.Print2;
 import jp.ac.it_college.std.s14006.adapter.PrintBanner;
 import jp.ac.it_college.std.s14006.adapter.PrintBanner2;
+import jp.ac.it_college.std.s14006.builder.Director;
+import jp.ac.it_college.std.s14006.builder.HTMLBuilder;
+import jp.ac.it_college.std.s14006.builder.TextBuilder;
 import jp.ac.it_college.std.s14006.factory_method.framework.*;
 import jp.ac.it_college.std.s14006.factory_method.idcard.IDCardFactory;
 import jp.ac.it_college.std.s14006.iterator.Book;
@@ -23,7 +27,7 @@ import jp.ac.it_college.std.s14006.template_method.StringDisplay;
  * Created by kabotya on 15/06/03.
  */
 public class Main {
-    public static void main(String[] ages) {
+    public static void main(String[] args) {
 
     //    Chapter1();
 
@@ -37,7 +41,9 @@ public class Main {
 
     //    Chapter5();
 
-        Chapter6();
+    //    Chapter6();
+
+        Chapter7(new String[] {"html"});
 
     //    Arraytest();          lesson19-1
 
@@ -155,6 +161,41 @@ public class Main {
         p3.use("Hello World");
     }
 
+    public static void Chapter7(String[] args) {
+
+        if (args.length != 1) {
+            usage();
+            System.exit(0);
+        }
+
+        if (args.equals("plain")) {
+            TextBuilder textbuilder = new TextBuilder();
+            Director director = new Director(textbuilder);
+            director.construct();
+            String result = textbuilder.getResult();
+            System.out.println(result);
+
+        } else if (args[0].equals("html")) {
+            HTMLBuilder htmlBuilder = new HTMLBuilder();
+            Director director = new Director(htmlBuilder);
+            director.construct();
+            String filename = htmlBuilder.getResult();
+            System.out.println(filename + "が作成されました");
+
+        } else {
+            usage();
+            System.exit(0);
+
+        }
+    }
+
+    private static void usage() {
+        System.out.println("Usage: java Main plain        プレーンテキストで作成");
+        System.out.println("Usage: java Main html         HTMLファイルで作成");
+    }
+
+
+    //配列のやつ
     public static void Arraytest() {
 
         String[] array = new String[3];
