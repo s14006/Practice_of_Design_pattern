@@ -10,6 +10,9 @@ import jp.ac.it_college.std.s14006.adapter.Print;
 import jp.ac.it_college.std.s14006.adapter.Print2;
 import jp.ac.it_college.std.s14006.adapter.PrintBanner;
 import jp.ac.it_college.std.s14006.adapter.PrintBanner2;
+import jp.ac.it_college.std.s14006.bridge.CountDisplay;
+import jp.ac.it_college.std.s14006.bridge.Display;
+import jp.ac.it_college.std.s14006.bridge.StringDisplayImp1;
 import jp.ac.it_college.std.s14006.builder.Director;
 import jp.ac.it_college.std.s14006.builder.HTMLBuilder;
 import jp.ac.it_college.std.s14006.builder.TextBuilder;
@@ -33,7 +36,7 @@ import jp.ac.it_college.std.s14006.template_method.StringDisplay;
 public class Main {
     public static void main(String[] args) {
 
-        FactoryMain(new String[]{});
+        Chapter9();
 
     }
 
@@ -200,6 +203,18 @@ public class Main {
         page.output();
 
 
+    }
+
+    public static void Chapter9() {
+
+        Display d1 = new Display(new StringDisplayImp1("Hello, azrs"));
+        Display d2 = new CountDisplay(new StringDisplayImp1("Hello, azrs"));
+        CountDisplay d3 = new CountDisplay(new StringDisplayImp1("Hello, azrs"));
+
+        d1.dispaly();
+        d2.dispaly();
+        d3.dispaly();
+        d3.multiDisplay(5);
     }
 
 

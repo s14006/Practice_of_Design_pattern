@@ -22,7 +22,7 @@ public class ListPage extends Page {
 
         while (it.hasNext()) {
             Item item = (Item)it.next();
-            buffer.append(Item.makeHTML());
+            buffer.append(item.makeHTML());
         }
 
         buffer.append("</ul>\n");

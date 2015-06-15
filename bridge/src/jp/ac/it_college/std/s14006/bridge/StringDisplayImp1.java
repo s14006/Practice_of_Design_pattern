@@ -32,7 +32,7 @@ public class StringDisplayImp1 extends DisplayImp1 {
             System.out.print("-");
         }
 
-        System.out.print("+");
+        System.out.println("+");
     }
 
 }
