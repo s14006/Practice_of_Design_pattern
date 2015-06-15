@@ -5,9 +5,9 @@ package jp.ac.it_college.std.s14006.bridge;
  */
 public class Display {
 
-    private DisplayImp imp1;
+    private DisplayImp1 imp1;
 
-    public Display(DisplayImp imp1) {
+    public Display(DisplayImp1 imp1) {
         this.imp1 = imp1;
     }
 
