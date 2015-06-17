@@ -8,8 +8,8 @@ public abstract class Entry {
     public abstract String getName();
     public abstract int getSize();
 
-    public Entry add(Entry entry) throws FileTreatmentException {
-        throw new FileTeatmentException();
+    public Entry add(Entry entry) throws FileTreamentException {
+        throw new FileTreamentException();
     }
 
     public void printList() {
