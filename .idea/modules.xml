@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/adapter/adapter.iml" filepath="$PROJECT_DIR$/adapter/adapter.iml" />
       <module fileurl="file://$PROJECT_DIR$/bridge/bridge.iml" filepath="$PROJECT_DIR$/bridge/bridge.iml" />
       <module fileurl="file://$PROJECT_DIR$/builder/builder.iml" filepath="$PROJECT_DIR$/builder/builder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/composite/composite.iml" filepath="$PROJECT_DIR$/composite/composite.iml" />
       <module fileurl="file://$PROJECT_DIR$/factory_method/factory_method.iml" filepath="$PROJECT_DIR$/factory_method/factory_method.iml" />
       <module fileurl="file://$PROJECT_DIR$/iterator/iterator.iml" filepath="$PROJECT_DIR$/iterator/iterator.iml" />
       <module fileurl="file://$PROJECT_DIR$/jp.ac.it_college.std.s14006.designpattern.iml" filepath="$PROJECT_DIR$/jp.ac.it_college.std.s14006.designpattern.iml" />
