@@ -8,7 +8,7 @@ public class File extends Entry {
     private String name;
     private int size;
 
-    public Filr(String name, int size) {
+    public File(String name, int size) {
         this.name = name;
         this.size = size;
     }
