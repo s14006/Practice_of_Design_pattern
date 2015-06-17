@@ -21,6 +21,7 @@ import jp.ac.it_college.std.s14006.bridge.StringDisplayImp1;
 import jp.ac.it_college.std.s14006.builder.Director;
 import jp.ac.it_college.std.s14006.builder.HTMLBuilder;
 import jp.ac.it_college.std.s14006.builder.TextBuilder;
+import jp.ac.it_college.std.s14006.chain_of_responsibility.*;
 import jp.ac.it_college.std.s14006.composite.Directory;
 import jp.ac.it_college.std.s14006.composite.File;
 import jp.ac.it_college.std.s14006.composite.FileTreamentException;
@@ -48,7 +49,7 @@ import javax.xml.ws.Dispatch;
 public class Main {
     public static void main(String[] args) {
 
-        Chapter13();
+        Chapter14();
 
     }
 
@@ -379,6 +380,22 @@ public class Main {
 
         } catch (FileTreatmentException e) {
             e.printStackTrace();
+        }
+    }
+
+    public static void Chapter14() {
+
+        Support azrs = new NoSupport("azrs");
+        Support kabotya = new LimitSupport("kabotya", 100);
+        Support cloneko = new SpecialSupport("cloneko", 429);
+        Support ito = new LimitSupport("ito", 200);
+        Support usathon = new OddSupport("usathon");
+        Support usao = new LimitSupport("usao", 300);
+
+        azrs.setNext(kabotya).setNext(cloneko).setNext(ito).setNext(usathon).setNext(usao);
+
+        for (int i = 0; i < 500; i++) {
+            azrs.support(new Trouble(i));
         }
     }
 
