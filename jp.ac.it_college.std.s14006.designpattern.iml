@@ -16,5 +16,6 @@
     <orderEntry type="module" module-name="builder" />
     <orderEntry type="module" module-name="abstract_factory" />
     <orderEntry type="module" module-name="bridge" />
+    <orderEntry type="module" module-name="strategy" />
   </component>
 </module>
