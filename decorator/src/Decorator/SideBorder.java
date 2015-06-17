@@ -1,4 +1,4 @@
-package jp.ac.it_college.std.s14006.decorator;
+package Decorator;
 
 /**
  * Created by kabotya on 15/06/17.

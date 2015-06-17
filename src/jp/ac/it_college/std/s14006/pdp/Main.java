@@ -2,6 +2,8 @@ package jp.ac.it_college.std.s14006.pdp;
 
 import java.util.*;
 
+import Decorator.FullBorder;
+import Decorator.SideBorder;
 import jp.ac.it_college.std.s14006.abstract_factory.factory.Factory;
 import jp.ac.it_college.std.s14006.abstract_factory.factory.Link;
 import jp.ac.it_college.std.s14006.abstract_factory.factory.Page;
@@ -19,8 +21,6 @@ import jp.ac.it_college.std.s14006.builder.TextBuilder;
 import jp.ac.it_college.std.s14006.composite.Directory;
 import jp.ac.it_college.std.s14006.composite.File;
 import jp.ac.it_college.std.s14006.composite.FileTreamentException;
-import jp.ac.it_college.std.s14006.factory_method.framework.*;
-import jp.ac.it_college.std.s14006.factory_method.idcard.IDCardFactory;
 import jp.ac.it_college.std.s14006.iterator.Book;
 import jp.ac.it_college.std.s14006.iterator.BookShelf;
 import jp.ac.it_college.std.s14006.iterator.Iterator;
@@ -37,13 +37,15 @@ import jp.ac.it_college.std.s14006.template_method.AbstractDisplay;
 import jp.ac.it_college.std.s14006.template_method.CharDisplay;
 import jp.ac.it_college.std.s14006.template_method.StringDisplay;
 
+import javax.xml.ws.Dispatch;
+
 /**
  * Created by kabotya on 15/06/03.
  */
 public class Main {
     public static void main(String[] args) {
 
-        Chapter11();
+        Chapter12();
 
     }
 
@@ -307,7 +309,33 @@ public class Main {
         }
     }
 
+    public static void Chapter12() {
 
+        Decorator.Display b1 = new Decorator.StringDisplay("Hello, world.");
+        Decorator.Display b2 = new SideBorder(b1, '#');
+        Decorator.Display b3 = new FullBorder(b2);
+
+        b1.show();
+        b2.show();
+        b3.show();
+
+        Decorator.Display b4 =
+                new SideBorder(
+                        new FullBorder(
+                                new FullBorder(
+                                        new SideBorder(
+                                                new FullBorder(
+                                                        new Decorator.StringDisplay("こんにちは")
+                                                ),
+                                                '*'
+                                        )
+                                )
+                        ),
+                        '/'
+                );
+
+        b4.show();
+    }
 
     //配列のやつ
     public static void Arraytest() {
