@@ -5,7 +5,7 @@ package jp.ac.it_college.std.s14006.decorator;
  */
 public abstract class Display {
 
-    public abstract int getColumns;
+    public abstract int getColumns();
     public abstract int getRows();
     public abstract String getRowText(int row);
 
