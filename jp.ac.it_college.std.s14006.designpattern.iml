@@ -19,5 +19,6 @@
     <orderEntry type="module" module-name="strategy" />
     <orderEntry type="module" module-name="composite" />
     <orderEntry type="module" module-name="decorator" />
+    <orderEntry type="module" module-name="visitor" />
   </component>
 </module>

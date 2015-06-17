@@ -1,4 +1,4 @@
-package jp.ac.it_college.std.s14006.visitor;
+package Visitor;
 
 import org.omg.CORBA.PUBLIC_MEMBER;
 
