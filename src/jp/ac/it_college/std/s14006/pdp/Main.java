@@ -6,7 +6,6 @@ import Decorator.FullBorder;
 import Decorator.SideBorder;
 import Visitor.FileTreatmentException;
 import Visitor.ListVisitor;
-import Visitor.Visiter;
 import jp.ac.it_college.std.s14006.abstract_factory.factory.Factory;
 import jp.ac.it_college.std.s14006.abstract_factory.factory.Link;
 import jp.ac.it_college.std.s14006.abstract_factory.factory.Page;
@@ -42,8 +41,8 @@ import jp.ac.it_college.std.s14006.strategy.WinningStrategy;
 import jp.ac.it_college.std.s14006.template_method.AbstractDisplay;
 import jp.ac.it_college.std.s14006.template_method.CharDisplay;
 import jp.ac.it_college.std.s14006.template_method.StringDisplay;
-
-import javax.xml.ws.Dispatch;
+import std.Observer.*;
+import std.Observer.Observer;
 
 /**
  * Created by kabotya on 15/06/03.
@@ -51,7 +50,7 @@ import javax.xml.ws.Dispatch;
 public class Main {
     public static void main(String[] args) {
 
-        Chapter16();
+        Chapter17();
 
     }
 
@@ -406,6 +405,21 @@ public class Main {
         PageMaker.makeWelcomePage("kabotya@kabotya.com", "welcome.html");
     }
 
+    public static void Chapter16() {
+        new LoginFrame("Mediator Sample");
+    }
+
+    public static void Chapter17() {
+
+        std.Observer.NumberGenerator generator = new std.Observer.RandomNumberGenerator();
+        std.Observer.Observer observer1 = new DigitObserver();
+        Observer observer2 = new GraphObserver();
+
+        generator.addObserver(observer1);
+        generator.addObserver(observer2);
+        generator.execute();
+    }
+
     //配列のやつ
     public static void Arraytest() {
 
@@ -421,9 +435,7 @@ public class Main {
 
     }
 
-    public static void Chapter16() {
-        new LoginFrame("Mediator Sample");
-    }
+
 
     public static void ArrayTest1() {
 
@@ -438,6 +450,8 @@ public class Main {
         }
 
     }
+
+
 
     public static void ArrayTest2() {
 

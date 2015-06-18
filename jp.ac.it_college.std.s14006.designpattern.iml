@@ -23,5 +23,6 @@
     <orderEntry type="module" module-name="chain_of_responsibility" />
     <orderEntry type="module" module-name="facade" />
     <orderEntry type="module" module-name="meduator" />
+    <orderEntry type="module" module-name="observer" />
   </component>
 </module>

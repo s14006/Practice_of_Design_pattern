@@ -1,4 +1,4 @@
-package jp.ac.it_college.std.s14006.observer;
+package std.Observer;
 
 import java.util.Random;
 
