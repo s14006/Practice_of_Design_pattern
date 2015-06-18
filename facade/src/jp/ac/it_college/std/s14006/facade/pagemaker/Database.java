@@ -1,4 +1,4 @@
-package jp.ac.it_college.std.s14006.facade;
+package jp.ac.it_college.std.s14006.facade.pagemaker;
 
 import java.io.FileInputStream;
 import java.io.IOException;
