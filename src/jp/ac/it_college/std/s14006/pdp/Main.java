@@ -25,6 +25,7 @@ import jp.ac.it_college.std.s14006.chain_of_responsibility.*;
 import jp.ac.it_college.std.s14006.composite.Directory;
 import jp.ac.it_college.std.s14006.composite.File;
 import jp.ac.it_college.std.s14006.composite.FileTreamentException;
+import jp.ac.it_college.std.s14006.facade.pagemaker.PageMaker;
 import jp.ac.it_college.std.s14006.iterator.Book;
 import jp.ac.it_college.std.s14006.iterator.BookShelf;
 import jp.ac.it_college.std.s14006.iterator.Iterator;
@@ -399,7 +400,10 @@ public class Main {
         }
     }
 
-    public static void
+    public static void Chapter15() {
+
+        PageMaker.makeWelcomePage("kabotya@kabotya.com", "welcome.html");
+    }
 
     //配列のやつ
     public static void Arraytest() {
