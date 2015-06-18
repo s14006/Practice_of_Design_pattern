@@ -49,7 +49,7 @@ import javax.xml.ws.Dispatch;
 public class Main {
     public static void main(String[] args) {
 
-        Chapter14();
+        Chapter15();
 
     }
 
@@ -398,6 +398,8 @@ public class Main {
             azrs.support(new Trouble(i));
         }
     }
+
+    public static void
 
     //配列のやつ
     public static void Arraytest() {
