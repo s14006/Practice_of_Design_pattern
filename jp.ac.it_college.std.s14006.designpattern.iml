@@ -24,5 +24,6 @@
     <orderEntry type="module" module-name="facade" />
     <orderEntry type="module" module-name="meduator" />
     <orderEntry type="module" module-name="observer" />
+    <orderEntry type="module" module-name="memento" />
   </component>
 </module>

@@ -57,7 +57,7 @@ public class Gamer {
 
     public void restoreMemento(Memento memento) {
         this.money = memento.money;
-        this.fruits - memento.getFruits();
+        this.fruits = memento.getFruits();
     }
 
     public String toString() {
