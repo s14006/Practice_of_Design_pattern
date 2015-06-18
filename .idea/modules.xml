@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/abstract_factory/abstract_factory.iml" filepath="$PROJECT_DIR$/abstract_factory/abstract_factory.iml" />
       <module fileurl="file://$PROJECT_DIR$/adapter/adapter.iml" filepath="$PROJECT_DIR$/adapter/adapter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/appendix/appendix.iml" filepath="$PROJECT_DIR$/appendix/appendix.iml" />
       <module fileurl="file://$PROJECT_DIR$/bridge/bridge.iml" filepath="$PROJECT_DIR$/bridge/bridge.iml" />
       <module fileurl="file://$PROJECT_DIR$/builder/builder.iml" filepath="$PROJECT_DIR$/builder/builder.iml" />
       <module fileurl="file://$PROJECT_DIR$/chain_of_responsibility/chain_of_responsibility.iml" filepath="$PROJECT_DIR$/chain_of_responsibility/chain_of_responsibility.iml" />
