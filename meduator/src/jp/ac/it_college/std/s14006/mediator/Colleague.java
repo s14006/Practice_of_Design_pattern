@@ -6,5 +6,5 @@ package jp.ac.it_college.std.s14006.mediator;
 public interface Colleague {
 
     public abstract void setMediator(Mediator mediator);
-    public abstract void setCollegueEnabled(boolean enabled)
+    public abstract void setColleagueEnabled(boolean enabled);
 }
