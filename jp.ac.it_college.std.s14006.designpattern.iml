@@ -22,5 +22,6 @@
     <orderEntry type="module" module-name="visitor" />
     <orderEntry type="module" module-name="chain_of_responsibility" />
     <orderEntry type="module" module-name="facade" />
+    <orderEntry type="module" module-name="meduator" />
   </component>
 </module>

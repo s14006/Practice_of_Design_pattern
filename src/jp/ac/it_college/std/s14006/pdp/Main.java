@@ -29,6 +29,7 @@ import jp.ac.it_college.std.s14006.facade.pagemaker.PageMaker;
 import jp.ac.it_college.std.s14006.iterator.Book;
 import jp.ac.it_college.std.s14006.iterator.BookShelf;
 import jp.ac.it_college.std.s14006.iterator.Iterator;
+import jp.ac.it_college.std.s14006.mediator.LoginFrame;
 import jp.ac.it_college.std.s14006.prototype.UnderlinePen;
 import jp.ac.it_college.std.s14006.prototype.framework.Manager;
 import jp.ac.it_college.std.s14006.prototype.framework.MessageBox;
@@ -50,7 +51,7 @@ import javax.xml.ws.Dispatch;
 public class Main {
     public static void main(String[] args) {
 
-        Chapter15();
+        Chapter16();
 
     }
 
@@ -418,6 +419,10 @@ public class Main {
             System.out.println(array[i]);
         }
 
+    }
+
+    public static void Chapter16() {
+        new LoginFrame("Mediator Sample");
     }
 
     public static void ArrayTest1() {
