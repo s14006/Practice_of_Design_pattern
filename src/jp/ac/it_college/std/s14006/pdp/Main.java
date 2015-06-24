@@ -14,6 +14,7 @@ import jp.ac.it_college.std.s14006.adapter.AdapterMain;
 import jp.ac.it_college.std.s14006.bridge.CountDisplay;
 import jp.ac.it_college.std.s14006.bridge.Display;
 import jp.ac.it_college.std.s14006.bridge.StringDisplayImp1;
+import jp.ac.it_college.std.s14006.builder.BuilderMain;
 import jp.ac.it_college.std.s14006.builder.Director;
 import jp.ac.it_college.std.s14006.builder.HTMLBuilder;
 import jp.ac.it_college.std.s14006.builder.TextBuilder;
@@ -53,7 +54,9 @@ public class Main {
 
         //new SingletonMain();      Chapter5 singleton
 
-        new PrototypeMain();
+        //new PrototypeMain();      Chapter5 prototype
+
+        new BuilderMain(new String[] {"html"});
 
 
 
