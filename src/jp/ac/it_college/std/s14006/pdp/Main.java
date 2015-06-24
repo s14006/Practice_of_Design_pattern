@@ -13,7 +13,7 @@ import jp.ac.it_college.std.s14006.composite.CompositeMain;
 import jp.ac.it_college.std.s14006.facade.pagemaker.FacadeMain;
 import jp.ac.it_college.std.s14006.factory_method.FactoryMethodMain;
 import jp.ac.it_college.std.s14006.iterator.IteratorMain;
-import jp.ac.it_college.std.s14006.mediator.LoginFrame;
+import jp.ac.it_college.std.s14006.mediator.MeduatorMain;
 import jp.ac.it_college.std.s14006.memento.Gamer;
 import jp.ac.it_college.std.s14006.memento.Memento;
 import jp.ac.it_college.std.s14006.prototype.PrototypeMain;
@@ -57,11 +57,10 @@ public class Main {
 
         //new ChainOfResponsibilityMain();          Chapter14 chain_of_responsbility
 
-        new FacadeMain();
+        //new FacadeMain();                         Chapter15 facade
 
-    }
-    public static void Chapter16() {
-        new LoginFrame("Mediator Sample");
+        new MeduatorMain();
+
     }
 
     public static void Chapter17() {
