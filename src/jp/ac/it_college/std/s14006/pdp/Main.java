@@ -10,10 +10,7 @@ import jp.ac.it_college.std.s14006.abstract_factory.factory.Factory;
 import jp.ac.it_college.std.s14006.abstract_factory.factory.Link;
 import jp.ac.it_college.std.s14006.abstract_factory.factory.Page;
 import jp.ac.it_college.std.s14006.abstract_factory.factory.Tray;
-import jp.ac.it_college.std.s14006.adapter.Print;
-import jp.ac.it_college.std.s14006.adapter.Print2;
-import jp.ac.it_college.std.s14006.adapter.PrintBanner;
-import jp.ac.it_college.std.s14006.adapter.PrintBanner2;
+import jp.ac.it_college.std.s14006.adapter.*;
 import jp.ac.it_college.std.s14006.bridge.CountDisplay;
 import jp.ac.it_college.std.s14006.bridge.Display;
 import jp.ac.it_college.std.s14006.bridge.StringDisplayImp1;
@@ -25,9 +22,6 @@ import jp.ac.it_college.std.s14006.composite.Directory;
 import jp.ac.it_college.std.s14006.composite.File;
 import jp.ac.it_college.std.s14006.composite.FileTreamentException;
 import jp.ac.it_college.std.s14006.facade.pagemaker.PageMaker;
-import jp.ac.it_college.std.s14006.iterator.Book;
-import jp.ac.it_college.std.s14006.iterator.BookShelf;
-import jp.ac.it_college.std.s14006.iterator.Iterator;
 import jp.ac.it_college.std.s14006.iterator.IteratorMain;
 import jp.ac.it_college.std.s14006.mediator.LoginFrame;
 import jp.ac.it_college.std.s14006.memento.Gamer;
@@ -54,6 +48,9 @@ public class Main {
     public static void main(String[] args) {
 
         //new IteratorMain();   Chapter1 iterator
+
+        new AdapterMain();
+
 
 
     }
