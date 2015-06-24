@@ -10,7 +10,7 @@ import jp.ac.it_college.std.s14006.abstract_factory.factory.Factory;
 import jp.ac.it_college.std.s14006.abstract_factory.factory.Link;
 import jp.ac.it_college.std.s14006.abstract_factory.factory.Page;
 import jp.ac.it_college.std.s14006.abstract_factory.factory.Tray;
-import jp.ac.it_college.std.s14006.adapter.*;
+import jp.ac.it_college.std.s14006.adapter.AdapterMain;
 import jp.ac.it_college.std.s14006.bridge.CountDisplay;
 import jp.ac.it_college.std.s14006.bridge.Display;
 import jp.ac.it_college.std.s14006.bridge.StringDisplayImp1;
@@ -35,9 +35,7 @@ import jp.ac.it_college.std.s14006.strategy.Hand;
 import jp.ac.it_college.std.s14006.strategy.Player;
 import jp.ac.it_college.std.s14006.strategy.ProbStrategy;
 import jp.ac.it_college.std.s14006.strategy.WinningStrategy;
-import jp.ac.it_college.std.s14006.template_method.AbstractDisplay;
-import jp.ac.it_college.std.s14006.template_method.CharDisplay;
-import jp.ac.it_college.std.s14006.template_method.StringDisplay;
+import jp.ac.it_college.std.s14006.template_method.TemplateMethodMain;
 import std.Observer.*;
 import std.Observer.Observer;
 
@@ -49,37 +47,12 @@ public class Main {
 
         //new IteratorMain();   Chapter1 iterator
 
-        new AdapterMain();
+        //new AdapterMain();    Chapter2 adapter
+
+        new TemplateMethodMain();
 
 
 
-    }
-
-    public static void Chapter2_1() {
-
-        Print p = new PrintBanner("⊂ミ⊃＾ω＾ ）⊃　ｱｳｱｳ!!");
-        p.printWeak();
-        p.printStrong();
-
-    }
-
-    public static void Chapter2_2() {
-
-        Print2 p = new PrintBanner2("⊂ミ⊃＾ω＾ ）⊃　ｱｳｱｳ!!");
-        p.printWeak();
-        p.printStrong();
-
-    }
-
-    public static void Chapter3() {
-
-        AbstractDisplay d1 = new CharDisplay('H');
-        AbstractDisplay d2 = new StringDisplay("Hello,World");
-        AbstractDisplay d3 = new StringDisplay("こんちは");
-
-        d1.display();
-        d2.display();
-        d3.display();
     }
 
     /*
