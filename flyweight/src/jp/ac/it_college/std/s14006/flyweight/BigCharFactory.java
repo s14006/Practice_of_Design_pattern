@@ -12,6 +12,9 @@ public class BigCharFactory {
     private static BigCharFactory singleton = new BigCharFactory();
 
     public BigCharFactory() {
+    }
+
+    public static BigCharFactory getInstance() {
         return singleton;
     }
 
