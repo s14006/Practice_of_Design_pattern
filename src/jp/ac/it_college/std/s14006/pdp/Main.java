@@ -17,6 +17,7 @@ import jp.ac.it_college.std.s14006.mediator.MeduatorMain;
 import jp.ac.it_college.std.s14006.memento.MementoMain;
 import jp.ac.it_college.std.s14006.prototype.PrototypeMain;
 import jp.ac.it_college.std.s14006.singleton.SingletonMain;
+import jp.ac.it_college.std.s14006.state.StateMain;
 import jp.ac.it_college.std.s14006.strategy.StrategyMain;
 import jp.ac.it_college.std.s14006.template_method.TemplateMethodMain;
 import std.Observer.ObserverMain;
@@ -61,7 +62,9 @@ public class Main {
 
         //new ObserverMain();                       Chapter17 observer
 
-        new MementoMain();
+        //new MementoMain();                        Chapter18 memento
+
+        new StateMain();
 
     }
 
