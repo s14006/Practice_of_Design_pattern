@@ -35,4 +35,11 @@ public class BuilderMain {
     }
 
 
+    private void usage() {
+        System.out.println("Usage: java Main plain        プレーンテキストで作成");
+        System.out.println("Usage: java Main html         HTMLファイルで作成");
+    }
+
+
+
 }

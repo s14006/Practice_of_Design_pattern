@@ -6,18 +6,12 @@ import Decorator.FullBorder;
 import Decorator.SideBorder;
 import Visitor.FileTreatmentException;
 import Visitor.ListVisitor;
-import jp.ac.it_college.std.s14006.abstract_factory.factory.Factory;
-import jp.ac.it_college.std.s14006.abstract_factory.factory.Link;
-import jp.ac.it_college.std.s14006.abstract_factory.factory.Page;
-import jp.ac.it_college.std.s14006.abstract_factory.factory.Tray;
+import jp.ac.it_college.std.s14006.abstract_factory.factory.*;
 import jp.ac.it_college.std.s14006.adapter.AdapterMain;
 import jp.ac.it_college.std.s14006.bridge.CountDisplay;
 import jp.ac.it_college.std.s14006.bridge.Display;
 import jp.ac.it_college.std.s14006.bridge.StringDisplayImp1;
 import jp.ac.it_college.std.s14006.builder.BuilderMain;
-import jp.ac.it_college.std.s14006.builder.Director;
-import jp.ac.it_college.std.s14006.builder.HTMLBuilder;
-import jp.ac.it_college.std.s14006.builder.TextBuilder;
 import jp.ac.it_college.std.s14006.chain_of_responsibility.*;
 import jp.ac.it_college.std.s14006.composite.Directory;
 import jp.ac.it_college.std.s14006.composite.File;
@@ -54,81 +48,11 @@ public class Main {
 
         //new SingletonMain();      Chapter5 singleton
 
-        //new PrototypeMain();      Chapter5 prototype
+        //new PrototypeMain();      Chapter6 prototype
 
-        new BuilderMain(new String[] {"html"});
+        //new BuilderMain(new String[] {"html"});   Chapter7 builder
 
-
-
-    }
-    public static void Chapter7(String[] args) {
-
-        if (args.length != 1) {
-            usage();
-            System.exit(0);
-        }
-
-        if (args.equals("plain")) {
-            TextBuilder textbuilder = new TextBuilder();
-            Director director = new Director(textbuilder);
-            director.construct();
-            String result = textbuilder.getResult();
-            System.out.println(result);
-
-        } else if (args[0].equals("html")) {
-            HTMLBuilder htmlBuilder = new HTMLBuilder();
-            Director director = new Director(htmlBuilder);
-            director.construct();
-            String filename = htmlBuilder.getResult();
-            System.out.println(filename + "が作成されました");
-
-        } else {
-            usage();
-            System.exit(0);
-
-        }
-    }
-
-    private static void usage() {
-        System.out.println("Usage: java Main plain        プレーンテキストで作成");
-        System.out.println("Usage: java Main html         HTMLファイルで作成");
-    }
-
-    public static void FactoryMain(String[] args) {
-
-        if (args.length != 1) {
-            System.out.println("Usage: java Main class.name.of.ConcreteFactory");
-            System.out.println("Example 1: java Main listfactory.ListFactory");
-            System.out.println("Example 2: java Main tablefactory.TableFactory");
-            System.exit(0);
-        }
-
-        Factory factory = Factory.getFactory(args[0]);
-
-        Link asahi = factory.createLink("朝日新聞", "http://www.asahi.com/");
-        Link yomiuri = factory.createLink("読売新聞", "http://www.yomiuri.co.jp/");
-        Link us_yahoo = factory.createLink("Yahoo!", "http://www.yahoo.com/");
-        Link jp_yahoo = factory.createLink("Yahoo!Japan", "http://www.yahoo.jp");
-        Link excite = factory.createLink("Excite", "http://www.excite.com");
-        Link google = factory.createLink("Google", "http://www.google.com");
-
-        Tray traynews = factory.createTray("新聞");
-        traynews.add(asahi);
-        traynews.add(yomiuri);
-
-        Tray trayyahoo = factory.createTray("Yahoo!");
-        trayyahoo.add(us_yahoo);
-        trayyahoo.add(jp_yahoo);
-
-        Tray traysearch = factory.createTray("サーチエンジン");
-        traysearch.add(traysearch);
-        traysearch.add(excite);
-        traysearch.add(google);
-
-        Page page = factory.createPage("LinkPage","かぼちゃ");
-        page.add(traynews);
-        page.add(traysearch);
-        page.output();
+        new FactoryMain(new String[] {""});
 
 
     }
