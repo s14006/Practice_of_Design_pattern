@@ -28,6 +28,7 @@ import jp.ac.it_college.std.s14006.facade.pagemaker.PageMaker;
 import jp.ac.it_college.std.s14006.iterator.Book;
 import jp.ac.it_college.std.s14006.iterator.BookShelf;
 import jp.ac.it_college.std.s14006.iterator.Iterator;
+import jp.ac.it_college.std.s14006.iterator.IteratorMain;
 import jp.ac.it_college.std.s14006.mediator.LoginFrame;
 import jp.ac.it_college.std.s14006.memento.Gamer;
 import jp.ac.it_college.std.s14006.memento.Memento;
@@ -52,24 +53,9 @@ import std.Observer.Observer;
 public class Main {
     public static void main(String[] args) {
 
-        Chapter18();
+        //new IteratorMain();   Chapter1 iterator
 
-    }
 
-    public static void Chapter1() {
-
-        BookShelf bookShelf = new BookShelf(4);
-        bookShelf.appendBook(new Book("Around the World in 80 Days"));
-        bookShelf.appendBook(new Book("Bible"));
-        bookShelf.appendBook(new Book("Cinderella"));
-        bookShelf.appendBook(new Book("⊂ミ⊃＾ω＾ ）⊃　ｱｳｱｳ!!"));
-
-        Iterator it = bookShelf.iterator();
-
-        while (it.hasNext()) {
-            Book book = (Book) it.next();
-            System.out.println(book.getName());
-        }
     }
 
     public static void Chapter2_1() {
