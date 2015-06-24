@@ -32,6 +32,7 @@ import jp.ac.it_college.std.s14006.prototype.framework.Manager;
 import jp.ac.it_college.std.s14006.prototype.framework.MessageBox;
 import jp.ac.it_college.std.s14006.prototype.framework.Product;
 import jp.ac.it_college.std.s14006.singleton.Singleton;
+import jp.ac.it_college.std.s14006.singleton.SingletonMain;
 import jp.ac.it_college.std.s14006.strategy.Hand;
 import jp.ac.it_college.std.s14006.strategy.Player;
 import jp.ac.it_college.std.s14006.strategy.ProbStrategy;
@@ -52,7 +53,11 @@ public class Main {
 
         //new TemplateMethodMain(); Chatper3 template_method
 
-        new FactoryMethodMain();
+        //new FactoryMethodMain();  Chapter4 factory_method
+
+        new SingletonMain();
+
+
 
     }
 
