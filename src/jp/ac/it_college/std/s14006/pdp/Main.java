@@ -20,8 +20,7 @@ import jp.ac.it_college.std.s14006.prototype.PrototypeMain;
 import jp.ac.it_college.std.s14006.singleton.SingletonMain;
 import jp.ac.it_college.std.s14006.strategy.StrategyMain;
 import jp.ac.it_college.std.s14006.template_method.TemplateMethodMain;
-import std.Observer.*;
-import std.Observer.Observer;
+import std.Observer.ObserverMain;
 
 /**
  * Created by kabotya on 15/06/03.
@@ -59,7 +58,9 @@ public class Main {
 
         //new FacadeMain();                         Chapter15 facade
 
-        new MeduatorMain();
+        //new MeduatorMain();                       Chapter16 meduator
+
+        new ObserverMain();
 
     }
 
