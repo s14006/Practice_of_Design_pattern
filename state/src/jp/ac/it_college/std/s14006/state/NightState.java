@@ -29,10 +29,10 @@ public class NightState implements State{
     }
 
     public void doPhone(Context context) {
-        context.callSecurityCenter("夜間の通話録音");
+        context.recordLog("夜間の通話録音");
     }
 
     public String toString() {
-        return "[夜間]"
+        return "[夜間]";
     }
 }
