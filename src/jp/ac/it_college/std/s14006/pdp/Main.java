@@ -6,11 +6,9 @@ import Decorator.FullBorder;
 import Decorator.SideBorder;
 import Visitor.FileTreatmentException;
 import Visitor.ListVisitor;
-import jp.ac.it_college.std.s14006.abstract_factory.factory.*;
+import jp.ac.it_college.std.s14006.abstract_factory.factory.FactoryMain;
 import jp.ac.it_college.std.s14006.adapter.AdapterMain;
-import jp.ac.it_college.std.s14006.bridge.CountDisplay;
-import jp.ac.it_college.std.s14006.bridge.Display;
-import jp.ac.it_college.std.s14006.bridge.StringDisplayImp1;
+import jp.ac.it_college.std.s14006.bridge.BridgeMain;
 import jp.ac.it_college.std.s14006.builder.BuilderMain;
 import jp.ac.it_college.std.s14006.chain_of_responsibility.*;
 import jp.ac.it_college.std.s14006.composite.Directory;
@@ -52,23 +50,12 @@ public class Main {
 
         //new BuilderMain(new String[] {"html"});   Chapter7 builder
 
-        new FactoryMain(new String[] {""});
+        //new FactoryMain(new String[] {""});   Chapter8 factory
+
+        new BridgeMain();
 
 
     }
-
-    public static void Chapter9() {
-
-        Display d1 = new Display(new StringDisplayImp1("Hello, azrs"));
-        Display d2 = new CountDisplay(new StringDisplayImp1("Hello, azrs"));
-        CountDisplay d3 = new CountDisplay(new StringDisplayImp1("Hello, azrs"));
-
-        d1.dispaly();
-        d2.dispaly();
-        d3.dispaly();
-        d3.multiDisplay(5);
-    }
-
     public static void Chapter10(String[] args) {
 
         if (args.length != 2) {
