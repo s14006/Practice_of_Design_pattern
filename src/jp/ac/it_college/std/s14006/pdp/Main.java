@@ -10,7 +10,7 @@ import jp.ac.it_college.std.s14006.bridge.BridgeMain;
 import jp.ac.it_college.std.s14006.builder.BuilderMain;
 import jp.ac.it_college.std.s14006.chain_of_responsibility.ChainOfResponsibilityMain;
 import jp.ac.it_college.std.s14006.composite.CompositeMain;
-import jp.ac.it_college.std.s14006.facade.pagemaker.PageMaker;
+import jp.ac.it_college.std.s14006.facade.pagemaker.FacadeMain;
 import jp.ac.it_college.std.s14006.factory_method.FactoryMethodMain;
 import jp.ac.it_college.std.s14006.iterator.IteratorMain;
 import jp.ac.it_college.std.s14006.mediator.LoginFrame;
@@ -55,14 +55,11 @@ public class Main {
 
         //new VisitorMain();                        Chapter13 visitor
 
-        new ChainOfResponsibilityMain();
+        //new ChainOfResponsibilityMain();          Chapter14 chain_of_responsbility
+
+        new FacadeMain();
 
     }
-    public static void Chapter15() {
-
-        PageMaker.makeWelcomePage("kabotya@kabotya.com", "welcome.html");
-    }
-
     public static void Chapter16() {
         new LoginFrame("Mediator Sample");
     }
