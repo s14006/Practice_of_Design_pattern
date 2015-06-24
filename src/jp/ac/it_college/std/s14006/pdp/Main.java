@@ -22,6 +22,7 @@ import jp.ac.it_college.std.s14006.composite.Directory;
 import jp.ac.it_college.std.s14006.composite.File;
 import jp.ac.it_college.std.s14006.composite.FileTreamentException;
 import jp.ac.it_college.std.s14006.facade.pagemaker.PageMaker;
+import jp.ac.it_college.std.s14006.factory_method.FactoryMethodMain;
 import jp.ac.it_college.std.s14006.iterator.IteratorMain;
 import jp.ac.it_college.std.s14006.mediator.LoginFrame;
 import jp.ac.it_college.std.s14006.memento.Gamer;
@@ -45,29 +46,15 @@ import std.Observer.Observer;
 public class Main {
     public static void main(String[] args) {
 
-        //new IteratorMain();   Chapter1 iterator
+        //new IteratorMain();       Chapter1 iterator
 
-        //new AdapterMain();    Chapter2 adapter
+        //new AdapterMain();        Chapter2 adapter
 
-        new TemplateMethodMain();
+        //new TemplateMethodMain(); Chatper3 template_method
 
-
+        new FactoryMethodMain();
 
     }
-
-    /*
-    public static void Chapter4() {
-
-        Factory factory = new IDCardFactory();
-
-        Prodact card1 = factory.create("かぼちゃ");
-        Prodact card2 = factory.create("azrs");
-        Prodact card3 = factory.create("cloneko");
-
-        card1.use();
-        card2.use();
-        card3.use();
-    }*/
 
     public static void Chapter5() {
 
