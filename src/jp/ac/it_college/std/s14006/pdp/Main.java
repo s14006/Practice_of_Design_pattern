@@ -8,7 +8,7 @@ import jp.ac.it_college.std.s14006.abstract_factory.factory.FactoryMain;
 import jp.ac.it_college.std.s14006.adapter.AdapterMain;
 import jp.ac.it_college.std.s14006.bridge.BridgeMain;
 import jp.ac.it_college.std.s14006.builder.BuilderMain;
-import jp.ac.it_college.std.s14006.chain_of_responsibility.*;
+import jp.ac.it_college.std.s14006.chain_of_responsibility.ChainOfResponsibilityMain;
 import jp.ac.it_college.std.s14006.composite.CompositeMain;
 import jp.ac.it_college.std.s14006.facade.pagemaker.PageMaker;
 import jp.ac.it_college.std.s14006.factory_method.FactoryMethodMain;
@@ -53,7 +53,9 @@ public class Main {
 
         //new DecoratorMain();                      Chapter12 decorator
 
-        new VisitorMain();
+        //new VisitorMain();                        Chapter13 visitor
+
+        new ChainOfResponsibilityMain();
 
     }
     public static void Chapter14() {
