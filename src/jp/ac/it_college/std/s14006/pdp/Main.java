@@ -27,11 +27,7 @@ import jp.ac.it_college.std.s14006.iterator.IteratorMain;
 import jp.ac.it_college.std.s14006.mediator.LoginFrame;
 import jp.ac.it_college.std.s14006.memento.Gamer;
 import jp.ac.it_college.std.s14006.memento.Memento;
-import jp.ac.it_college.std.s14006.prototype.UnderlinePen;
-import jp.ac.it_college.std.s14006.prototype.framework.Manager;
-import jp.ac.it_college.std.s14006.prototype.framework.MessageBox;
-import jp.ac.it_college.std.s14006.prototype.framework.Product;
-import jp.ac.it_college.std.s14006.singleton.Singleton;
+import jp.ac.it_college.std.s14006.prototype.PrototypeMain;
 import jp.ac.it_college.std.s14006.singleton.SingletonMain;
 import jp.ac.it_college.std.s14006.strategy.Hand;
 import jp.ac.it_college.std.s14006.strategy.Player;
@@ -55,48 +51,13 @@ public class Main {
 
         //new FactoryMethodMain();  Chapter4 factory_method
 
-        new SingletonMain();
+        //new SingletonMain();      Chapter5 singleton
+
+        new PrototypeMain();
 
 
 
     }
-
-    public static void Chapter5() {
-
-        System.out.println("Start.");
-
-        Singleton obj1 = Singleton.getInstance();
-        Singleton obj2 = Singleton.getInstance();
-
-        if (obj1 == obj2) {
-            System.out.println("obj1とobj2は同じインスタンスです");
-        } else {
-            System.out.println("obj1とobj2は同じインスタンスではありません");
-        }
-
-        System.out.println("End.");
-    }
-
-    public static void Chapter6() {
-
-        Manager manager = new Manager();
-        UnderlinePen upen = new UnderlinePen('~');
-        MessageBox mbox = new MessageBox('*');
-        MessageBox sbox = new MessageBox('/');
-        manager.register("Strong message", upen);
-        manager.register("warning box", mbox);
-        manager.register("slash box",  sbox);
-
-        Product p1 = manager.create("Strong message");
-        p1.use("Hello World");
-
-        Product p2 = manager.create("warning box");
-        p2.use("Hello World");
-
-        Product p3 = manager.create("slash box");
-        p3.use("Hello World");
-    }
-
     public static void Chapter7(String[] args) {
 
         if (args.length != 1) {
