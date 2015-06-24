@@ -2,6 +2,7 @@ package jp.ac.it_college.std.s14006.pdp;
 
 import java.util.*;
 
+import Decorator.DecoratorMain;
 import Decorator.FullBorder;
 import Decorator.SideBorder;
 import Visitor.FileTreatmentException;
@@ -31,58 +32,31 @@ import std.Observer.Observer;
 public class Main {
     public static void main(String[] args) {
 
-        //new IteratorMain();       Chapter1 iterator
+        //new IteratorMain();                       Chapter1 iterator
 
-        //new AdapterMain();        Chapter2 adapter
+        //new AdapterMain();                        Chapter2 adapter
 
-        //new TemplateMethodMain(); Chatper3 template_method
+        //new TemplateMethodMain();                 Chatper3 template_method
 
-        //new FactoryMethodMain();  Chapter4 factory_method
+        //new FactoryMethodMain();                  Chapter4 factory_method
 
-        //new SingletonMain();      Chapter5 singleton
+        //new SingletonMain();                      Chapter5 singleton
 
-        //new PrototypeMain();      Chapter6 prototype
+        //new PrototypeMain();                      Chapter6 prototype
 
         //new BuilderMain(new String[] {"html"});   Chapter7 builder
 
-        //new FactoryMain(new String[] {""});   Chapter8 factory
+        //new FactoryMain(new String[] {""});       Chapter8 factory
 
-        //new BridgeMain();         Chapter9 bridge
+        //new BridgeMain();                         Chapter9 bridge
 
         //new StrategyMain(new String[] {"auau"});  Chapter10 storategy
 
-        new CompositeMain();
+        //new CompositeMain();                      Chapter11 composite
 
+        new DecoratorMain();
 
     }
-    public static void Chapter12() {
-
-        Decorator.Display b1 = new Decorator.StringDisplay("Hello, world.");
-        Decorator.Display b2 = new SideBorder(b1, '#');
-        Decorator.Display b3 = new FullBorder(b2);
-
-        b1.show();
-        b2.show();
-        b3.show();
-
-        Decorator.Display b4 =
-                new SideBorder(
-                        new FullBorder(
-                                new FullBorder(
-                                        new SideBorder(
-                                                new FullBorder(
-                                                        new Decorator.StringDisplay("こんにちは")
-                                                ),
-                                                '*'
-                                        )
-                                )
-                        ),
-                        '/'
-                );
-
-        b4.show();
-    }
-
     public static void Chapter13() {
 
         try {
