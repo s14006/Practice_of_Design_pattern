@@ -12,6 +12,7 @@ import jp.ac.it_college.std.s14006.chain_of_responsibility.ChainOfResponsibility
 import jp.ac.it_college.std.s14006.composite.CompositeMain;
 import jp.ac.it_college.std.s14006.facade.pagemaker.FacadeMain;
 import jp.ac.it_college.std.s14006.factory_method.FactoryMethodMain;
+import jp.ac.it_college.std.s14006.flyweight.FlyweightMain;
 import jp.ac.it_college.std.s14006.iterator.IteratorMain;
 import jp.ac.it_college.std.s14006.mediator.MeduatorMain;
 import jp.ac.it_college.std.s14006.memento.MementoMain;
@@ -64,7 +65,9 @@ public class Main {
 
         //new MementoMain();                        Chapter18 memento
 
-        new StateMain();
+        //new StateMain();                          Chapter19 state
+
+        FlyweightMain(new String );
 
     }
 
