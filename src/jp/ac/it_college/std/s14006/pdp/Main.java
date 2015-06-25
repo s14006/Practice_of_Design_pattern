@@ -9,6 +9,7 @@ import jp.ac.it_college.std.s14006.adapter.AdapterMain;
 import jp.ac.it_college.std.s14006.bridge.BridgeMain;
 import jp.ac.it_college.std.s14006.builder.BuilderMain;
 import jp.ac.it_college.std.s14006.chain_of_responsibility.ChainOfResponsibilityMain;
+import jp.ac.it_college.std.s14006.command.CommandMain;
 import jp.ac.it_college.std.s14006.composite.CompositeMain;
 import jp.ac.it_college.std.s14006.facade.pagemaker.FacadeMain;
 import jp.ac.it_college.std.s14006.factory_method.FactoryMethodMain;
@@ -70,7 +71,9 @@ public class Main {
 
         //new FlyweightMain(new String[] {"1"} );   Chapter20 flyweight
 
-        new ProxyMain();
+        //new ProxyMain();                          Chapter21 proxy
+
+        new CommandMain("Command Pattern Sample");
 
     }
 
