@@ -14,6 +14,7 @@ import jp.ac.it_college.std.s14006.composite.CompositeMain;
 import jp.ac.it_college.std.s14006.facade.pagemaker.FacadeMain;
 import jp.ac.it_college.std.s14006.factory_method.FactoryMethodMain;
 import jp.ac.it_college.std.s14006.flyweight.FlyweightMain;
+import jp.ac.it_college.std.s14006.interpreter.InterpreterMain;
 import jp.ac.it_college.std.s14006.iterator.IteratorMain;
 import jp.ac.it_college.std.s14006.mediator.MeduatorMain;
 import jp.ac.it_college.std.s14006.memento.MementoMain;
@@ -73,7 +74,9 @@ public class Main {
 
         //new ProxyMain();                          Chapter21 proxy
 
-        new CommandMain("Command Pattern Sample");
+        //new CommandMain("Command Pattern Sample"); Chapter22 command
+
+        new InterpreterMain();
 
     }
 
