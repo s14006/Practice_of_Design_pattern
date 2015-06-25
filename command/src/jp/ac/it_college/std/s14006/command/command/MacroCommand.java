@@ -1,4 +1,6 @@
-package jp.ac.it_college.std.s14006.command;
+package jp.ac.it_college.std.s14006.command.command;
+
+import jp.ac.it_college.std.s14006.command.command.Command;
 
 import java.util.Stack;
 import java.util.Iterator;

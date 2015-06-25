@@ -1,4 +1,4 @@
-package jp.ac.it_college.std.s14006.command;
+package jp.ac.it_college.std.s14006.command.command;
 
 /**
  * Created by kabotya on 15/06/25.
