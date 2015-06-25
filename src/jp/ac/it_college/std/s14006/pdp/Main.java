@@ -17,6 +17,7 @@ import jp.ac.it_college.std.s14006.iterator.IteratorMain;
 import jp.ac.it_college.std.s14006.mediator.MeduatorMain;
 import jp.ac.it_college.std.s14006.memento.MementoMain;
 import jp.ac.it_college.std.s14006.prototype.PrototypeMain;
+import jp.ac.it_college.std.s14006.proxy.ProxyMain;
 import jp.ac.it_college.std.s14006.singleton.SingletonMain;
 import jp.ac.it_college.std.s14006.state.StateMain;
 import jp.ac.it_college.std.s14006.strategy.StrategyMain;
@@ -67,7 +68,9 @@ public class Main {
 
         //new StateMain();                          Chapter19 state
 
-        FlyweightMain(new String );
+        //new FlyweightMain(new String[] {"1"} );   Chapter20 flyweight
+
+        new ProxyMain();
 
     }
 
