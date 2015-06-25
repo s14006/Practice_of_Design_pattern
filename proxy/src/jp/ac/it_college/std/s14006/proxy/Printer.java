@@ -3,7 +3,7 @@ package jp.ac.it_college.std.s14006.proxy;
 /**
  * Created by kabotya on 15/06/25.
  */
-public class Printer implements Printtable {
+public class Printer implements Printable {
 
     private String name;
 
