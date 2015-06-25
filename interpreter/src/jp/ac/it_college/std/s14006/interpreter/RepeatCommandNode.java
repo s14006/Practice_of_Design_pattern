@@ -11,7 +11,7 @@ public class RepeatCommandNode extends Node {
     private Node commandListNode;
 
     public void parse(Context context) throws ParseException {
-        context.slipToken("repeat");
+        context.skipToken("repeat");
         number = context.currentNumber();
         context.nextToken();
         commandListNode = new CommandListNode();

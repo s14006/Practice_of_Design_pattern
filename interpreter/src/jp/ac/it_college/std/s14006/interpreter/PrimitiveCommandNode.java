@@ -7,7 +7,7 @@ public class PrimitiveCommandNode extends Node {
 
     private String name;
 
-    public void parse(Contxt contxt) throws ParseException {
+    public void parse(Context contxt) throws ParseException {
         name = contxt.currentToken();
         contxt.skipToken(name);
         if (!name.equals("go") && !name.equals("right") && !name.equals("left")) {
